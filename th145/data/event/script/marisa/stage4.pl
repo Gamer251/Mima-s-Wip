@@ -57,28 +57,18 @@
 ,th145_Show,marisa,-1280	,,#魔理沙フェイス表示開始
 
 ,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_普1,0,0
-はてさて\nお楽しみの儀式ターイム\,a11x2,0,0
-,ClearBalloon,marisa
-
-,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_驚1,0,0
-見よ！　この漲る\nオカルトパワー！\,a11x2,0,0
-,ClearBalloon,marisa
-
-,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_余1,0,0
-夢幻の力が身体を\n満たすのが判る\,a11x2,0,0
-,ClearBalloon,marisa
-
-,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_決1,0,0
-さあ我が身体を\n大きくするがよいー！\,a11x2,0,0
+"Phew, finally a place where\nI can relax a bit.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 ,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_汗1,0,0
-キャッ\n恥ずかしい独り言だわ\,a11x2,0,0
+,ImageDef,marisa,魔理沙_怒1,0,0
+"I hope they'll let me.\",a11x2,0,0
+,ClearBalloon,marisa
+
+,SetFocus,marisa		,
+,ImageDef,marisa,魔理沙_普2,0,0
+"I just want to live in peace\namong the people.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 # 2Pキャラステージ下から登場
@@ -90,38 +80,59 @@
 
 ,SetFocus,mamizou		,
 ,ImageDef,mamizou,マミゾウ_普1,0,0
-見てたぞい\,a05x2,0,0
+"Well, what do we have here. A\npeace-seeking spirit.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 #紹介カット表示　マミゾウは「マミゾウ_普1」からのみ実行可能\,a11x2,0,0
 ,th145_CharName_Cutin,mamizou
 ,Function,"function main(){ for (local i=0; i < 30; i++) suspend(); }"
 
-,Function,"StopBGM(500);",# BGM停止
-,Function,"GameStory_PlayBattleBGM(512);",# 戦闘BGM再生開始
-
-,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_驚1,0,0
-何だとー？\,a05x2,0,0
-,ClearBalloon,marisa
-
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_驚1,0,0
+"I see you're looking\nfor a place to lodge.\",a15x3,0,0
+,ClearBalloon,mamizou
 
 ,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_怒1,0,0
-見られたからには\n生かしておけぬ\,a11x2,0,0
+"How do you know\nthat? Were you\nlistening to me?\",a15x3,0,0
 ,ClearBalloon,marisa
+
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_汗1,0,0
+"Actually, yes. That's\nwhy I'm here.\",a15x3,0,0
+,ClearBalloon,mamizou
+
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_嬉1,0,0
+"I'll let you stay at our place\nonly under the\nfollowing conditions.\",a15x3,0,0
+,ClearBalloon,mamizou
+
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_惑1,0,0
+"First: You must defeat me.\",a15x3,0,0
+,ClearBalloon,mamizou
+
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_汗1,0,0
+"Second: You must go to the outside world and\nbeat the person that\ncaused all of this.\",a15x3,0,0
+,ClearBalloon,mamizou
 
 ,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_決1,0,0
-死ねい\,a05x2,0,0
+"Deal. Defeating you would be easy.\",a15x3,0,0
 ,ClearBalloon,marisa
 
-
+,SetFocus,mamizou		,
+,ImageDef,mamizou,マミゾウ_嬉1,0,0
+"Ok, let the battle begin.\",a15x3,0,0
+,ClearBalloon,mamizou
 
 #両者フェイス撤去
 ,th145_Hide,marisa,-1280,&
 ,th145_Hide,mamizou,-1280,
 
+,Function,"StopBGM(500);",# BGM停止
+,Function,"GameStory_PlayBattleBGM(512);",# 戦闘BGM再生開始
 
 ,Function,"RoundStory_Ready();",# TODO::対戦開始命令
 
@@ -135,13 +146,13 @@
 
 #初期表情設定
 ,ImageDef,marisa,魔理沙_負1,0,0
-,ImageDef,mamizou,マミゾウ_余1,0,0
+,ImageDef,mamizou,マミゾウ_惑1,0,0
 
 ,th145_Show,marisa,-1280	,&,#魔理沙フェイス表示開始
 ,th145_Show,mamizou,-1280	,#魔理沙フェイス表示開始
 
 ,SetFocus,mamizou
-まあそう焦るな\n恥ずかしい台詞の一つや二つ\n誰でも言うじゃろ\,a15x3,0,0
+"Come on, I know you can win against me.\",a15x3,0,0
 
 ,Function,"::StopBGM(1500);"
 #コンテニュー処理へのジャンプを予定　現在は仮で次のステージに進んでから一つ戻る処理を行い、同ステージの最初から再開します
@@ -166,56 +177,28 @@
 ,th145_Show,mamizou,-1280	,#魔理沙フェイス表示開始
 
 
-,SetFocus,mamizou		,
-そうか小人のお前が\nボールを七つ集めてしまったか\,a15x3,0,0
-,ClearBalloon,mamizou
-
 ,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_普1,0,0
-七つ集めたら\n大きくなれるんでしょ？\,a11x2,0,0
-,ClearBalloon,marisa
-
-,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_嬉1,0,0
-そりゃ私が集めないで\n誰が得するっていうのよ\,a15x3,0,0
+"There, I won. Now tell me where is tha\nperson I must beat.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 ,SetFocus,mamizou		,
-,ImageDef,mamizou,マミゾウ_惑1,0,0
-ふむ、生憎じゃがな\nそれを集めても大きくなれんぞい\,a15x3,0,0
+"Go to the Hakurei Shrine and talk to Kasen. She'll help\nyou get to the Outside World.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 ,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_惑1,0,0
-え？\,a05x2,0,0
-,ClearBalloon,marisa
-
-,SetFocus,mamizou		,
-,ImageDef,mamizou,マミゾウ_汗1,0,0
-そんな噂信じる方が\nどうかしてると思うが\,a11x2,0,0
-,ClearBalloon,mamizou
-
-,SetFocus,marisa		,
-,ImageDef,marisa,魔理沙_汗1,0,0
-それじゃあ\nこのボールは一体\,a11x2,0,0
+,ImageDef,marisa,魔理沙_怒1,0,0
+"How does she look?\",a11x2,0,0
 ,ClearBalloon,marisa
 
 ,SetFocus,mamizou		,
 ,ImageDef,mamizou,マミゾウ_惑1,0,0
-儂の分も取られて\nしまったからな\,a11x2,0,0
+"She's a pink haired hermit. You'll\nrecognize her immediately.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 ,SetFocus,mamizou		,
-,ImageDef,mamizou,マミゾウ_余1,0,0
-こりゃあ自分で確かめる\nしか無かろうて\,a11x2,0,0
+,ImageDef,mamizou,マミゾウ_嬉1,0,0
+"Good luck with the\nsecond condition.\",a15x3,0,0
 ,ClearBalloon,mamizou
-
-
-
-
-
-
-
 
 ,Function,"::StopBGM(1500);"
 ,Thread,"::story.NextStage();"

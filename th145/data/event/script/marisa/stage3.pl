@@ -72,7 +72,7 @@
 
 ,SetFocus,mokou		,#発言中キャラを指定
 ,ImageDef,mokou,妹紅_普1,0,0
-"What do you want, spirit?"\,a05x2,0,0
+"What do you want, spirit?\",a05x2,0,0
 ,ClearBalloon,mokou
 
 #紹介カット表示　妹紅は「妹紅_普1」からのみ実行可能\,a11x2,0,0
