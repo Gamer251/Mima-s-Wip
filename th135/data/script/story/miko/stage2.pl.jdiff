@@ -1,0 +1,35 @@
+{
+    "1": {
+        "lines": [
+            "Looks like you beat Reimu."
+        ]
+    },
+    "2": {
+        "lines": [
+            "Now I get a chance at you!"
+        ]
+    },
+    "3": {
+        "lines": [
+            "<balloon$a15x3>",
+            "I do not wish to be seen bullying the weak.",
+            "If you are confident, however,"
+        ]
+    },
+    "4": {
+        "lines": [
+            "I see no reason to refuse."
+        ]
+    },
+    "5": {
+        "lines": [
+            "Alright!"
+        ]
+    },
+    "6": {
+        "lines": [
+            "If I beat you,",
+            "that means I beat Reimu, too!"
+        ]
+    }
+}

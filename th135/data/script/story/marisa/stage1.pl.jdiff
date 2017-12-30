@@ -1,0 +1,26 @@
+{
+    "1": {
+        "lines": [
+            "What?",
+            "You want believers, too?"
+        ]
+    },
+    "2": {
+        "lines": [
+            "<balloon$a15x3>",
+            "Well, yeah.",
+            "I'm not about to let y'all have all the fun."
+        ]
+    },
+    "3": {
+        "lines": [
+            "Then that makes you a rival, too."
+        ]
+    },
+    "4": {
+        "lines": [
+            "I'll beat you here",
+            "and put you to shame!"
+        ]
+    }
+}
