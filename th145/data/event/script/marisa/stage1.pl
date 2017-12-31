@@ -63,7 +63,7 @@
 ,th145_Show,marisa,-1280	,#霊夢フェイス表示開始
 "Reimu, long time no see.\",a11x2,0,0
 ,ImageDef,marisa,魔理沙_驚3,0,0
-Although I see you have some sort of dark aura inside you and that's\nkinda unsettling.\,a15x3,0,0
+Although I see you have some sort of dark aura\ninside you and that's kinda unsettling.\,a15x3,0,0
 ,ClearBalloon,marisa
 
 
