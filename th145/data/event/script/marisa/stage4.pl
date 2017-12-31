@@ -185,7 +185,7 @@
 
 #初期表情設定
 ,ImageDef,marisa,魔理沙_決1,0,0
-,ImageDef,mamizou,マミゾウ_怒1,0,0
+,ImageDef,mamizou,マミゾウ_嬉1,0,0
 
 ,Sleep,5
 
@@ -197,6 +197,9 @@
 "It won't be as easy for you to\nbe allowed to rest here!\",a15x3,0,0
 ,ClearBalloon,mamizou
 
+,SetFocus,marisa		,#発言中キャラを指定
+"I will win anyway.\",a11x2,0,0
+,ClearBalloon,marisa
 
 #両者フェイス撤去
 ,th145_Hide,marisa,-1280,&

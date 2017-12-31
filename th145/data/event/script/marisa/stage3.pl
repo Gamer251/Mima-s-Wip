@@ -133,14 +133,15 @@
 ,End
 
 # -----------------
-# 戦闘中会話
+# 戦闘中に会話が入ります（スペルカード一つ使った後くらいかな）
+#
 :main_2
 
 ,GoSub,init				,# 初期化ルーチン呼び出し
 
 #初期表情設定
 ,ImageDef,marisa,魔理沙_普1,0,0
-,ImageDef,mokou,こいし_普1,0,0
+,ImageDef,mokou,妹紅_普1,0,0
 
 ,Sleep,5
 
@@ -148,13 +149,15 @@
 ,th145_Show,marisa,-1280,&,#魔理沙フェイス表示開始
 ,th145_Show,mokou,-1280,#魔理沙フェイス表示開始
 
+
+,SetFocus,marisa	,#発言中キャラを指定
+"Come on, you were serious\nbecause I'm going there.\",a15x3,0,0
+,ClearBalloon,marisa
+
 ,SetFocus,mokou		,#発言中キャラを指定
 "I won't let the humans being tormented\nby bad spirit like you.\",a15x3,0,0
 ,ClearBalloon,mokou
 
-#フキダシの一括消去　これを実行するまで噴出しは際限なく手前に増える
-,ClearBalloon,marisa
-,ClearBalloon,mokou
 
 #両者フェイス撤去
 ,th145_Hide,marisa,-1280,&
