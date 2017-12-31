@@ -93,7 +93,7 @@
 
 ,SetFocus,marisa		,#発言中キャラを指定
 ,ImageDef,marisa,魔理沙_普1,0,0
-"My name is Mima and I \nonce an evil spirit.\",a15x3,0,0
+"My name is Mima and I once an evil spirit.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 ,SetFocus,ichirin		,#発言中キャラを指定

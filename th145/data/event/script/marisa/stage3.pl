@@ -113,7 +113,7 @@
 
 ,SetFocus,mokou		,#”­Œ¾’†ƒLƒƒƒ‰‚ğw’è
 ,ImageDef,mokou,–…g_Œˆ1,0,0
-"I don't buy a single thing you say. Prepare\nyourself, for I'll burn you to ashes evil spirit\",a15x3,0,0
+"I don't buy a single thing you say. Prepare\nyourself, for I'll burn you to ashes evil spirit.\",a15x3,0,0
 ,ClearBalloon,mokou
 
 

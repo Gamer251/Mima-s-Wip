@@ -189,6 +189,9 @@
 "I can't afford myself to let someone like\nyou make  the situation get worse.\",a15x3,0,0
 ,ClearBalloon,kasen
 
+,SetFocus,marisa		,
+"Is it so hard for you to defeat me?\",a11x2,0,0
+,ClearBalloon,marisa
 
 #両者フェイス撤去
 ,th145_Hide,marisa,-1280,&
