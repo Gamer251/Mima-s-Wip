@@ -58,7 +58,7 @@
 
 ,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_決1,0,0
-"Phew, finally a place where\nI can relax a bit.\",a15x3,0,0
+"Phew, finally a place where I can relax a bit.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 ,SetFocus,marisa		,
@@ -68,7 +68,7 @@
 
 ,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_普2,0,0
-"I just want to live in peace\namong the people.\",a15x3,0,0
+"I just want to live in peace among the people.\",a15x3,0,0
 ,ClearBalloon,marisa
 
 # 2Pキャラステージ下から登場
@@ -99,12 +99,12 @@
 
 ,SetFocus,mamizou		,
 ,ImageDef,mamizou,マミゾウ_汗1,0,0
-"Actually, yes. That's\nwhy I'm here.\",a15x3,0,0
+"Actually, yes. That's why I'm here.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 ,SetFocus,mamizou		,
 ,ImageDef,mamizou,マミゾウ_嬉1,0,0
-"I'll let you stay at our place\nonly under the\nfollowing conditions.\",a15x3,0,0
+"I'll let you stay at our place\nonly under the following conditions.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 ,SetFocus,mamizou		,
@@ -114,7 +114,7 @@
 
 ,SetFocus,mamizou		,
 ,ImageDef,mamizou,マミゾウ_汗1,0,0
-"Second: You must go to the outside world and\nbeat the person that\ncaused all of this.\",a15x3,0,0
+"Second: You must go to the outside world and\nbeat the person that caused all of this.\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 ,SetFocus,marisa		,
@@ -162,6 +162,39 @@
 
 ,SetFocus,mamizou		,
 "That was just the beginning.\",a15x3,0,0
+,ClearBalloon,mamizou
+
+
+#両者フェイス撤去
+,th145_Hide,marisa,-1280,&
+,th145_Hide,mamizou,-1280,
+
+,Sleep,60
+
+,Function,"RoundStory_TalkFight();",# TODO::対再開命令
+
+,End
+
+
+# -----------------
+# 戦闘中に会話が入ります（スペルカード一つ使った後くらいかな）
+#
+:main_3
+
+,GoSub,init				,# 初期化ルーチン呼び出し
+
+#初期表情設定
+,ImageDef,marisa,魔理沙_決1,0,0
+,ImageDef,mamizou,マミゾウ_怒1,0,0
+
+,Sleep,5
+
+#,Move,marisa,0,-25,25	,#フェイス画像位置を非トーク位置にシフト
+,th145_Show,marisa,-1280,&,#魔理沙フェイス表示開始
+,th145_Show,mamizou,-1280,#魔理沙フェイス表示開始
+
+,SetFocus,mamizou		,
+"It won't be as easy for you to\nbe allowed to rest here!\",a15x3,0,0
 ,ClearBalloon,mamizou
 
 
@@ -237,6 +270,13 @@
 ,ImageDef,mamizou,マミゾウ_嬉1,0,0
 "Good luck with the\nsecond condition.\",a15x3,0,0
 ,ClearBalloon,mamizou
+
+
+
+
+
+
+
 
 ,Function,"::StopBGM(1500);"
 ,Thread,"::story.NextStage();"

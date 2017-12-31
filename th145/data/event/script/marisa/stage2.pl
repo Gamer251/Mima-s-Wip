@@ -118,7 +118,7 @@
 
 ,SetFocus,ichirin		,#発言中キャラを指定
 ,ImageDef,ichirin,一輪_決1,0,0
-"I don't care. I'll beat you up right\nhere so I can purify\nyou from all evil.\",a15x3,0,0
+"I don't care. I'll beat you up right\nhere so I can purify you from all evil.\",a15x3,0,0
 ,ClearBalloon,ichirin
 
 ,SetFocus,marisa		,#発言中キャラを指定
@@ -138,7 +138,42 @@
 
 ,End
 
+# -----------------
+# 戦闘中に会話が入ります（スペルカード一つ使った後くらいかな）
+#
+:main_2
 
+,GoSub,init				,# 初期化ルーチン呼び出し
+
+#初期表情設定
+,ImageDef,marisa,魔理沙_決1,0,0
+,ImageDef,ichirin,一輪_惑1,0,0
+
+,Sleep,5
+
+#,Move,marisa,0,-25,25	,#フェイス画像位置を非トーク位置にシフト
+,th145_Show,marisa,-1280,&,#魔理沙フェイス表示開始
+,th145_Show,ichirin,-1280,#魔理沙フェイス表示開始
+
+
+,SetFocus,marisa		,#発言中キャラを指定
+"I thought that a Nyuudou user would\nbe more strong than that!\",a15x3,0,0
+,ClearBalloon,marisa
+
+,SetFocus,ichirin		,
+"I will not even show my true power.\",a15x3,0,0
+,ClearBalloon,ichirin
+
+
+#両者フェイス撤去
+,th145_Hide,marisa,-1280,&
+,th145_Hide,ichirin,-1280,
+
+,Sleep,60
+
+,Function,"RoundStory_TalkFight();",# TODO::対再開命令
+
+,End
 
 
 # -------------------------------------------------------
@@ -187,7 +222,7 @@ Welp turns out she was right.\,a15x3,0,0
 
 ,SetFocus,marisa
 ,ImageDef,marisa,魔理沙_嬉1,0,0
-"Next time show a bit more\ntrust on others.\",a15x3,0,0
+"Next time show a bit more trust on others.\",a15x3,0,0
 ,ClearBalloon,ichirin
 
 

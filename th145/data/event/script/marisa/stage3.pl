@@ -103,7 +103,7 @@
 
 ,SetFocus,mokou		,#発言中キャラを指定
 ,ImageDef,mokou,妹紅_余1,0,0
-"To protect humans from\npeople like you.\",a15x3,0,0
+"To protect humans from people like you.\",a15x3,0,0
 ,ClearBalloon,mokou
 
 ,SetFocus,marisa		,#発言中キャラを指定
@@ -113,7 +113,7 @@
 
 ,SetFocus,mokou		,#発言中キャラを指定
 ,ImageDef,mokou,妹紅_決1,0,0
-"I don't buy a single thing you say. Prepare\nyourself, for I'll burn you to ashes\n evil spirit\",a15x3,0,0
+"I don't buy a single thing you say. Prepare\nyourself, for I'll burn you to ashes evil spirit\",a15x3,0,0
 ,ClearBalloon,mokou
 
 
@@ -151,7 +151,7 @@
 ,SetFocus,mokou		,#発言中キャラを指定
 ,ImageDef,mokou,こいし_普1,0,0
 ,th145_Show,mokou,-1280	,#&, #こいしフェイス表示開始
-文章A\,a11x2,0,0
+"I won't let the humans being tormented\nby bad spirit like you.\",a15x3,0,0
 ,ClearBalloon,mokou
 
 #フキダシの一括消去　これを実行するまで噴出しは際限なく手前に増える

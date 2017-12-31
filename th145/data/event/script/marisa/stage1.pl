@@ -63,7 +63,7 @@
 ,th145_Show,marisa,-1280	,#霊夢フェイス表示開始
 "Reimu, long time no see.\",a11x2,0,0
 ,ImageDef,marisa,魔理沙_驚3,0,0
-Although I see you have some sort of dark aura\ninside you and that's\nkinda unsettling.\,a15x3,0,0
+Although I see you have some sort of dark aura inside you and that's\nkinda unsettling.\,a15x3,0,0
 ,ClearBalloon,marisa
 
 
@@ -118,7 +118,7 @@ Although I see you have some sort of dark aura\ninside you and that's\nkinda uns
 
 ,SetFocus,reimu,
 ,ImageDef,reimu,霊夢_決1,0,0
-"Do you want to behold the power I\nhave obtained thanks to the occult orbs?\",a15x3,0,0
+"Do you want to behold the power I have\nobtained thanks to the occult orbs?\",a15x3,0,0
 ,ClearBalloon,reimu
 
 ,SetFocus,marisa,
@@ -138,6 +138,44 @@ Although I see you have some sort of dark aura\ninside you and that's\nkinda uns
 ,Function,"RoundStory_Ready();",# TODO::対戦開始命令
 
 ,End
+
+# -----------------
+# 戦闘中に会話が入ります（スペルカード一つ使った後くらいかな）
+#
+:main_2
+
+,GoSub,init				,# 初期化ルーチン呼び出し
+
+#初期表情設定
+,ImageDef,marisa,魔理沙_決1,0,0
+,ImageDef,reimu,霊夢_決1,0,0
+
+,Sleep,5
+
+#,Move,marisa,0,-25,25	,#フェイス画像位置を非トーク位置にシフト
+,th145_Show,marisa,-1280,&,#魔理沙フェイス表示開始
+,th145_Show,reimu,-1280,#魔理沙フェイス表示開始
+
+
+,SetFocus,marisa		,#発言中キャラを指定
+"Come on, Reimu I know you can do better.\",a15x3,0,0
+,ClearBalloon,marisa
+
+,SetFocus,reimu		,
+"Now, I'll show my urban legend.\",a15x3,0,0
+,ClearBalloon,reimu
+
+
+#両者フェイス撤去
+,th145_Hide,marisa,-1280,&
+,th145_Hide,reimu,-1280,
+
+,Sleep,60
+
+,Function,"RoundStory_TalkFight();",# TODO::対再開命令
+
+,End
+
 
 # -------------------------------------------------------
 # 敗北編
@@ -181,7 +219,7 @@ Although I see you have some sort of dark aura\ninside you and that's\nkinda uns
 
 ,SetFocus,marisa		,
 ,ImageDef,marisa,魔理沙_普1,0,0
-"Well, It seems to me you're too dependant on the\nUrban Legend. Maybe you should\ntrain...\",a15x3,0,0
+"Well, It seems to me you're too dependant on the\nUrban Legend. Maybe you should train...\",a15x3,0,0
 ,ImageDef,marisa,魔理沙_普2,0,0
 your own combat skills.\,a15x3,0,0
 ,ClearBalloon,marisa
