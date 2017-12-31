@@ -149,8 +149,6 @@
 ,th145_Show,mokou,-1280,#魔理沙フェイス表示開始
 
 ,SetFocus,mokou		,#発言中キャラを指定
-,ImageDef,mokou,こいし_普1,0,0
-,th145_Show,mokou,-1280	,#&, #こいしフェイス表示開始
 "I won't let the humans being tormented\nby bad spirit like you.\",a15x3,0,0
 ,ClearBalloon,mokou
 
