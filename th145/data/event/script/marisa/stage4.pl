@@ -138,6 +138,44 @@
 
 ,End
 
+# -----------------
+# 戦闘中に会話が入ります（スペルカード一つ使った後くらいかな）
+#
+:main_2
+
+,GoSub,init				,# 初期化ルーチン呼び出し
+
+#初期表情設定
+,ImageDef,marisa,魔理沙_決1,0,0
+,ImageDef,mamizou,マミゾウ_怒1,0,0
+
+,Sleep,5
+
+#,Move,marisa,0,-25,25	,#フェイス画像位置を非トーク位置にシフト
+,th145_Show,marisa,-1280,&,#魔理沙フェイス表示開始
+,th145_Show,mamizou,-1280,#魔理沙フェイス表示開始
+
+
+,SetFocus,marisa		,#発言中キャラを指定
+"This is being easy.\",a11x2,0,0
+,ClearBalloon,marisa
+
+,SetFocus,mamizou		,
+"That was just the beginning.\",a15x3,0,0
+,ClearBalloon,mamizou
+
+
+#両者フェイス撤去
+,th145_Hide,marisa,-1280,&
+,th145_Hide,mamizou,-1280,
+
+,Sleep,60
+
+,Function,"RoundStory_TalkFight();",# TODO::対再開命令
+
+,End
+
+
 # -------------------------------------------------------
 # 敗北編
 # -------------------------------------------------------
