@@ -10,6 +10,18 @@ Español:#Mima-s-Wip Progreso:
 
 15.5; No tendrá ningún cambio hasta que tenga todos los sprites del juego.
 
+#Qué necesito...
+
+Sprites del nuevo estilo de tasofro para Mima (13.5/14.5 y 15.5)
+
+Ejemplo: https://i.imgur.com/u17Hjat.png
+
+Un coder que entienda el lenguaje C++.
+
+Y nada más de momento...
+
+Si quieres contactar con quien esta actualizando el mod de Mima en crap habla con Discord buscando a este usuario: @IkuTronHD#1793
+
 English:# Mima-s-Wip Progress:
 
 10.5; Suffers chrases in the battles and in the middle of the story (It happens the same with Touhou Crap in story)
@@ -21,3 +33,15 @@ English:# Mima-s-Wip Progress:
 14.5: Everything works well the problem is when you beat Mamizou in level 4 of Mima's story mode that freezes when you beat her.
 
 15.5; You will not have any change until you have all the sprites in the game.
+
+#What I need...
+
+Sprites of the new tasofro style for Mima (13.5 / 14.5 and 15.5)
+
+Example: https://i.imgur.com/u17Hjat.png
+
+A coder who understands the C++ language.
+
+And nothing else at the moment...
+
+If you want to contact who is updating the Mima mod in crap, talk to Discord looking for this user: @IkuTronHD#1793
