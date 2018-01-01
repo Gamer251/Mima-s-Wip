@@ -20,7 +20,7 @@ Un coder que entienda el lenguaje C++.
 
 Y nada más de momento...
 
-Si quieres contactar con quien esta actualizando el mod de Mima en crap habla con Discord buscando a este usuario: https://discord.gg/hYT3YTc
+Si quieres contactar con quien esta actualizando el mod de Mima en crap habla con Discord buscando a este servidor: https://discord.gg/hYT3YTc
 
 English:# Mima-s-Wip Progress:
 
@@ -44,4 +44,4 @@ A coder who understands the C++ language.
 
 And nothing else at the moment...
 
-If you want to contact who is updating the Mima mod in crap, talk to Discord looking for this user: https://discord.gg/hYT3YTc
+If you want to contact who is updating the Mima mod in crap, talk to Discord looking for this server: https://discord.gg/hYT3YTc
